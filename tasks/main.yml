@@ -15,4 +15,3 @@
   vars:
     - orig_http: 8080
     - orig_https: 8443
-    
