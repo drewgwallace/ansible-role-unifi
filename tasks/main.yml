@@ -1,0 +1,18 @@
+---
+# Purpose: Main task includes for Unifi
+# Last Updated: 2018.06.11
+# Notes: The size of the OS must meet minimum requirements, services will
+#          complain and not start unifi if too small
+
+
+- include_tasks: os_vars.yml
+
+- include_tasks: unifi_repo.yml
+
+- include_tasks: unifi_install.yml
+
+- include_tasks: iptables_redirect.yml
+  vars:
+    - orig_http: 8080
+    - orig_https: 8443
+    

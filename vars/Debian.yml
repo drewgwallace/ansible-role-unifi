@@ -1,0 +1,9 @@
+---
+# Purpose: Debian specific OS vars
+# Last Updated: 2018.06.11
+# Notes:
+
+
+unifi_package: "unifi"
+
+unifi_service: "unifi"

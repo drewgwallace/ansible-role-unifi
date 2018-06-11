@@ -1,4 +1,9 @@
 ---
+# Purpose: IPtables redirection of standard unprivileged ports to defaults for
+#            http and https
+# Last Updated: 2018.06.11
+# Notes:
+
 
 # iptables -t nat -A PREROUTING -i eth0 -p tcp --dport $srcPortNumber -j REDIRECT --to-port $dstPortNumber
 # iptables -t nat -L -n -v

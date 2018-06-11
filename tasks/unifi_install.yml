@@ -1,0 +1,12 @@
+---
+# Purpose: Install Unifi package and dependencies
+# Last Updated: 2018.06.11
+# Notes:
+
+
+- name: Install Unifi
+  package: 
+    name: "{{ unifi_package }}"
+    state: latest
+  # Implied enable service
+  notify: "Start Unifi Service"

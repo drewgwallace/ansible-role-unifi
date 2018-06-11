@@ -1,5 +1,9 @@
 ---
- 
+# Purpose: Configure Ubiquiti / Unifi repository
+# Last Updated: 2018.06.11
+# Notes:
+
+
 - name: Add an Apt signing key
   apt_key:
     url: https://dl.ubnt.com/unifi/unifi-repo.gpg 

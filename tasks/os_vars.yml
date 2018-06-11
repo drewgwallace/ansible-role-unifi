@@ -1,0 +1,16 @@
+# Purpose: Import OS specific vars
+# Last Updated: 2018.06.11
+# Notes:
+---
+
+
+- include_vars: "{{ item }}"
+  with_first_found:
+    - "../vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version | int}}.yml"
+    - "../vars/{{ ansible_distribution }}.yml"
+    - "../vars/{{ ansible_os_family }}.yml"
+    - "../vars/default.yml"
+    - "../vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version | int}}.yaml"
+    - "../vars/{{ ansible_distribution }}.yaml"
+    - "../vars/{{ ansible_os_family }}.yaml"
+    - "../vars/default.yaml"
