@@ -1,15 +1,14 @@
 ---
-# Purpose: Meta for Unifi for Ansible Galaxy
-# Last Updated: 2018.06.11
-# Notes:
-
-
 dependencies: []
 
 galaxy_info:
   author: drewgwallace
   description: Install Ubiquiti Unifi Controller repository and software package.
-  company: 
+  galaxy_tags:
+    - wifi
+    - updates
+    - apt
+    - networking
   license: MIT
   min_ansible_version: 2.4
   platforms:
@@ -19,8 +18,3 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - all
-  galaxy_tags:
-    - wifi
-    - updates
-    - apt
-    - networking
